@@ -74,6 +74,9 @@ io.on("connection", (socket) => {
   });
 });
 
+const socket = io('https://spiononline.onrender.com/');
+
+
 server.listen(3000, () => {
   console.log("Server läuft auf http://localhost:3000");
 });
