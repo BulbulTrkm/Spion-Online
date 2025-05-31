@@ -74,7 +74,6 @@ io.on("connection", (socket) => {
   });
 });
 
-const socket = io('https://spiononline.onrender.com/');
 
 
 server.listen(3000, () => {
