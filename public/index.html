@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spion Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loginScreen">
+    <h2>Spion Online</h2>
+    <input id="playerNameInput" placeholder="Spielername" /><br/>
+    <input id="lobbyCodeInput" placeholder="Lobby-Code" /><br/>
+    <button onclick="createLobby()">Lobby erstellen</button>
+    <button onclick="joinLobby()">Lobby beitreten</button>
+  </div>
+
+  <div id="lobbyScreen" style="display:none;">
+    <h2>Lobby: <span id="lobbyIdDisplay"></span></h2>
+    <p>Du bist: <span id="playerNameDisplay"></span></p>
+    <h3>Spieler in der Lobby:</h3>
+    <ul id="playerList"></ul>
+    <button id="startButton" onclick="startGame()">Spiel starten</button>
+  </div>
+
+  <div id="gameScreen" style="display:none;">
+    <h2>Spiel gestartet!</h2>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

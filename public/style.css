@@ -1,0 +1,53 @@
+
+    :root {
+      --bg-color: #f2f2f2;
+      --text-color: #000;
+      --button-bg: #333;
+      --button-text: #fff;
+    }
+
+    body.dark {
+      --bg-color: #121212;
+      --text-color: #eee;
+      --button-bg: #444;
+      --button-text: #fff;
+    }
+
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 2em;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+    }
+
+    .hidden { display: none; }
+
+    button {
+      padding: 1em 2em;
+      font-size: 1em;
+      margin-top: 1em;
+      border-radius: 8px;
+      border: none;
+      background: var(--button-bg);
+      color: var(--button-text);
+      cursor: pointer;
+    }
+
+    input, select {
+      padding: 0.5em;
+      font-size: 1em;
+      margin: 0.5em;
+    }
+
+    .top-controls {
+      position: fixed;
+      top: 1em;
+      right: 1em;
+    }
+
+    .top-controls button {
+      margin-left: 0.5em;
+    }
+  
